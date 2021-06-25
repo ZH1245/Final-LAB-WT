@@ -49,7 +49,13 @@ function NavigationBar() {
     >
       <Navbar.Brand key="brand">
         <div className="logo">
-          <Typography.Text>PSL Matches</Typography.Text>
+          <Typography.Text
+            onClick={() => {
+              history.push("/");
+            }}
+          >
+            PSL Matches
+          </Typography.Text>
         </div>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" key="toggle" />
