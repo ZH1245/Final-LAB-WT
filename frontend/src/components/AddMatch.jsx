@@ -76,12 +76,12 @@ function AddMatch() {
   const cityOptions = city.map((item) => {
     return { value: item, key: item };
   });
-  const teamAOption = teamA.map((item) => {
-    return { value: item, key: item };
-  });
-  const teamBOptions = teamB.map((item) => {
-    return { value: item, key: item };
-  });
+  //   const teamAOption = teamA.map((item) => {
+  //     return { value: item, key: item };
+  //   });
+  //   const teamBOptions = teamB.map((item) => {
+  //     return { value: item, key: item };
+  //   });
 
   return (
     <div style={{ margin: "0 auto", width: "50%" }}>
@@ -127,6 +127,7 @@ function AddMatch() {
             allowClear
             style={{ width: "100%" }}
             placeholder="Please select"
+            // onSelect={handleSelect}
           >
             {teamA.map((item) => {
               return <Option key={item}>{item}</Option>;
@@ -153,7 +154,18 @@ function AddMatch() {
             })}
           </Select>
         </Form.Item>
-
+        <Form.Item
+          label="Date"
+          name="dateate"
+          rules={[
+            {
+              required: true,
+              message: "Please Select Release Date!",
+            },
+          ]}
+        >
+          <DatePicker></DatePicker>
+        </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit">
             Submit
