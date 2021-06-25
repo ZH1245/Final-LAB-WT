@@ -153,7 +153,7 @@ function AddMatch() {
         </Form.Item>
         <Form.Item
           label="Date"
-          name="dateate"
+          name="date"
           rules={[
             {
               required: true,
