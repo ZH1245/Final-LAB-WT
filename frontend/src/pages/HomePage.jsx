@@ -22,9 +22,13 @@ function HomePage() {
   };
   return (
     <MyLayout>
-      {data.map((item) => {
-        <div>{item.date + item.teamA + "VS" + item.teamB + item.city}</div>;
-      })}
+      {isloading ? (
+        <br />
+      ) : (
+        data.map((item) => {
+          <div>{item.date + item.teamA + "VS" + item.teamB + item.city}</div>;
+        })
+      )}
     </MyLayout>
   );
 }
