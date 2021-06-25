@@ -4,6 +4,6 @@ const adminAuth = require("../middlewares/adminAuth");
 
 router.route("/get").get(matchController.getMatches);
 router.route("/get/:id").get(matchController.getMatchById);
-router.route("/create").post(adminAuth, matchController.createMatch);
+router.route("/create").post(matchController.createMatch);
 
 module.exports = router;

@@ -56,9 +56,6 @@ function AddMatch() {
   }
   const handleFinish = (e) => {
     console.log("VALUES OF FORM", e);
-    // const result = Cpu.filter((item) => {
-    //   return e.cpu.toLowerCase().includes(item.name.toLowerCase());
-    // })[0];
     axios({
       method: "post",
       url: "http://localhost:4000/match/create/",
