@@ -35,7 +35,7 @@ const teamB = [
   "Quetta Gladiators",
 ];
 const city = ["Karachi", "Multan", "Peshawar", "Lahore", "Islamabad", "Quetta"];
-function NewMobile() {
+function AddMatch() {
   const [teamB, setteamB] = React.useState([]);
   const [teamA, setteamA] = React.useState([]);
   const [sensors, setCity] = useState([]);
@@ -165,4 +165,4 @@ function NewMobile() {
   );
 }
 
-export default NewMobile;
+export default AddMatch;
