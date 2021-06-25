@@ -14,7 +14,6 @@ import {
 } from "antd";
 import axios from "axios";
 import Text from "antd/lib/typography/Text";
-import client from "../api/client";
 
 const { Content, Header, Footer } = Layout;
 const { Option } = Select;
