@@ -56,10 +56,10 @@ function MyLayout(props) {
           >
             {userDetails.role == "admin" ? (
               <Menu.Item
-                key="addmobile"
+                key="addmatch"
                 danger
                 onClick={() => {
-                  history.push("/addMobile");
+                  history.push("/addMatch");
                 }}
               >
                 Add Match
