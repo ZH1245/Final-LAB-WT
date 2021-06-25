@@ -35,8 +35,8 @@ const teamB = [
 ];
 const city = ["Karachi", "Multan", "Peshawar", "Lahore", "Islamabad", "Quetta"];
 function AddMatch() {
-  const [teamB, setteamB] = React.useState([]);
-  const [teamA, setteamA] = React.useState([]);
+  //   const [teamB, setteamB] = React.useState([]);
+  //   const [teamA, setteamA] = React.useState([]);
   const [sensors, setCity] = useState([]);
 
   function compare(a, b) {
